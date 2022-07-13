@@ -38,6 +38,6 @@ missed_states = [state for state in states if state not in guessed_states]
 missed_states_dict = {"state": missed_states}
 
 df = pandas.DataFrame(missed_states_dict)
-df.to_csv("missed_states.csv")
+df.to_csv("missed_states.csv", index=False)
 
 screen.exitonclick()
